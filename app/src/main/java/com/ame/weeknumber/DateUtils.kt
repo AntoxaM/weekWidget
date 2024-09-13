@@ -6,6 +6,6 @@ import java.util.Locale
 
 fun getCurrentWeek(localDate: LocalDate = LocalDate.now()): Int {
     val date = localDate
-    val weekFields = WeekFields.of(Locale.ENGLISH)
+    val weekFields = WeekFields.of(Locale.FRANCE)
     return date[weekFields.weekOfWeekBasedYear()]
 }

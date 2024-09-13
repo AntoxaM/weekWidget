@@ -3,6 +3,7 @@ package com.ame.weeknumber
 import org.junit.Test
 
 import org.junit.Assert.*
+import java.time.LocalDate
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -12,6 +13,7 @@ import org.junit.Assert.*
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+        assertEquals(27, getCurrentWeek(LocalDate.of(2024, 7, 7)))
+        assertEquals(28, getCurrentWeek(LocalDate.of(2024, 7, 8)))
     }
 }
